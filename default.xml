@@ -1,0 +1,11 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+	<!-- include RDK manifests -->
+    <include name="manifests/default.xml"/>
+    <remote name="github" fetch="https://github.com" />
+    <!-- RDK specifies meta-wpe, lets override it from here -->
+    <extend-project revision="638f0b822ff658c28e5f7b50d319ae5fc6878caa" path="meta-wpe"/>
+    <!-- add meta-rdk-wpe adaptation layer -->
+    <project remote="github" revision="94ea54c593f957e068eca97bdfd5255acab3c26b" name="WebPlatformForEmbedded/meta-rdk-wpe" path="meta-rdk-wpe"/>
+</manifest>
