@@ -21,10 +21,11 @@ You need to have an account on RDK Central, please visit [rdkcentral](http://rdk
 
 Typically a target comes with a [BSP layer](https://en.wikipedia.org/wiki/Board_support_package) and you'll need to run setup-environment from the BSP layer to init the build system. For the sake of this tutorial we'll be initialising a Broadcom reference build, however you'd likely want to do `. meta-rdk-{OEM}/setup-environment` for the device you have. 
 
-1. `. meta-rdk-broadcom-generic-rdk/setup-environment-refboard-rdkv`
+1. `. meta-rdk-broadcom-generic-rdk/setup-environment-refboard-rdkv` and follow the instructions
 2. Select Yocto 2.2, this relies on the `morty` branch of OE and WPE layers
-3. `bitbake-layers add-layers ../meta-wpe`
-4. `bitbake-layers add-layer ../meta-rdk-wpe`
+3. Select the device you'd like to make a build for, e.g. the BCM7271.
+4. `bitbake-layers add-layers ../meta-wpe`
+5. `bitbake-layers add-layer ../meta-rdk-wpe`
 
 ### Build it
 
